@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdd complete IngredientCheck iOS app with GPT-5-mini OCR and ECHA integration\n\n- Create full iOS app architecture using MVVM + Repository Pattern\n- Implement GPT-5-mini OCR client for ingredient extraction (cost: ~$0.001/scan)\n- Integrate ECHA API for safety information lookup\n- Add camera capture with permission handling\n- Build SwiftUI UI with scan history and results display\n- Set up dependency injection for easy backend migration\n- Add comprehensive documentation (CLAUDE.md, SETUP.md, CAMERA_GUIDE.md)\n- Support both camera capture and photo library selection\n\nTech Stack:\n- iOS 16.0+ with SwiftUI\n- GPT-5-mini Vision API for OCR\n- ECHA REST API for ingredient safety data\n- Repository Pattern for backend-ready architecture\n- Actor-based caching system\n\nFeatures:\n- Photo-based ingredient scanning\n- Real-time safety analysis\n- Scan history with local storage\n- Anonymous authentication\n- Multi-language support (準備繁中/英文)\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
