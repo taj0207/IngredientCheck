@@ -75,10 +75,10 @@ struct FeatureFlags {
     // MARK: - Development
 
     /// Enable debug logging
-    static var enableDebugLogging = Environment.current == .development
+    static var enableDebugLogging = AppEnvironment.current == .development
 
     /// Show API response time in UI
-    static var showAPIResponseTime = Environment.current == .development
+    static var showAPIResponseTime = AppEnvironment.current == .development
 
     /// Enable mock data for testing
     static var useMockData = false

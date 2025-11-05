@@ -38,6 +38,11 @@ struct HomeView: View {
                 .padding()
             }
             .navigationTitle("IngredientCheck")
+            .onAppear {
+                Task {
+                    await viewModel.loadUser()
+                }
+            }
             .refreshable {
                 if let userId = viewModel.user?.id {
                     await viewModel.loadScanHistory(for: userId)
@@ -221,7 +226,7 @@ struct IngredientRow: View {
 
             Spacer()
 
-            Image(systemImage: ingredient.safetyLevel.icon)
+            Image(systemName: ingredient.safetyLevel.icon)
                 .foregroundColor(ingredient.safetyLevel.color)
         }
     }
@@ -249,9 +254,10 @@ struct ScanHistoryView: View {
                     }
                 }
                 .onDelete { indexSet in
+                    let scansToDelete = indexSet.map { viewModel.scanHistory[$0] }
                     Task {
-                        for index in indexSet {
-                            await viewModel.deleteScan(viewModel.scanHistory[index])
+                        for scan in scansToDelete {
+                            await viewModel.deleteScan(scan)
                         }
                     }
                 }

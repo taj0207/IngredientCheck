@@ -8,13 +8,13 @@
 import Foundation
 
 /// Application environment configuration
-enum Environment {
+enum AppEnvironment {
     case development
     case staging
     case production
 
     /// Current environment - change based on build configuration
-    static var current: Environment {
+    static var current: AppEnvironment {
         #if DEBUG
         return .development
         #else

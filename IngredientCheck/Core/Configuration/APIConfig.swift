@@ -22,7 +22,9 @@ struct APIConfig {
     static let gpt5Model = "gpt-5"
 
     /// Maximum tokens for OCR response
-    static let maxOCRTokens = 1024
+    /// GPT-5 uses reasoning tokens (1000-2000) + output tokens (200-500)
+    /// So we need at least 2048-4096 total
+    static let maxOCRTokens = 4096
 
     /// Timeout for OCR requests (seconds)
     static let ocrTimeout: TimeInterval = 30
@@ -40,10 +42,18 @@ struct APIConfig {
 
     // MARK: - ECHA Configuration
 
-    /// ECHA API base URL
+    /// Use Firebase proxy to bypass WAF restrictions
+    /// Set this to false to use direct ECHA API (will fail due to WAF)
+    static let useECHAProxy = true
+
+    /// Firebase Function proxy URL for ECHA API
+    /// Deployed at: https://console.firebase.google.com/project/ingredientcheck-app-1762334045/functions
+    static let echaProxyURL = "https://us-central1-ingredientcheck-app-1762334045.cloudfunctions.net/echaSearch"
+
+    /// ECHA API base URL (direct, blocked by WAF)
     static let echaBaseURL = "https://echa.europa.eu/api"
 
-    /// ECHA dissemination API
+    /// ECHA dissemination API (direct, blocked by WAF)
     static let echaDisseminationURL = "https://echa.europa.eu/api/diss"
 
     /// ECHA timeout (seconds)
@@ -77,11 +87,4 @@ struct APIConfig {
 
     /// Delay between retries (seconds)
     static let retryDelay: TimeInterval = 1.0
-}
-
-/// Placeholder for secrets - this file should be git-ignored
-/// Create this file manually: IngredientCheck/Core/Configuration/Secrets.swift
-enum Secrets {
-    static let openAIAPIKey = "sk-proj-YOUR_API_KEY_HERE"
-    static let googleOAuthClientID: String? = nil
 }

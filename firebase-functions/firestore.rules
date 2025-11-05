@@ -1,0 +1,9 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ECHA cache - read by functions only
+    match /echa_cache/{document=**} {
+      allow read, write: if false; // Only accessible by Functions
+    }
+  }
+}

@@ -56,26 +56,37 @@ class LLMOCRClient {
         language: String? = nil
     ) async throws -> OCRResult {
         let startTime = Date()
+        print("🚀 Starting OCR extraction...")
 
         // Convert and compress image
+        print("📸 Preparing image...")
         guard let imageData = prepareImage(image) else {
             throw OCRError.invalidImage
         }
+        print("✅ Image prepared: \(imageData.count) bytes")
 
         // Convert to base64
+        print("🔄 Converting to base64...")
         let base64Image = imageData.base64EncodedString()
+        print("✅ Base64 ready: \(base64Image.count) characters")
 
         // Create request payload
+        print("📦 Creating request payload...")
         let payload = try createRequestPayload(
             base64Image: base64Image,
             language: language
         )
+        print("✅ Payload created")
 
         // Perform API request
+        print("🌐 Sending API request...")
         let response = try await performOCRRequest(payload: payload)
+        print("✅ API response received")
 
         // Parse response
+        print("🔍 Parsing response...")
         let ingredients = try parseIngredients(from: response)
+        print("✅ Parsed \(ingredients.count) ingredients")
 
         let processingTime = Date().timeIntervalSince(startTime)
 
@@ -129,7 +140,7 @@ class LLMOCRClient {
                     ]
                 )
             ],
-            maxTokens: APIConfig.maxOCRTokens
+            maxCompletionTokens: APIConfig.maxOCRTokens
         )
     }
 
@@ -165,12 +176,20 @@ class LLMOCRClient {
             throw OCRError.apiKeyMissing
         }
 
+        print("🔍 OCR Request - Model: \(payload.model), URL: \(url.absoluteString)")
+        print("🔑 API Key prefix: \(String(apiKey.prefix(10)))...")
+        Logger.info("🔍 OCR Request - Model: \(payload.model), URL: \(url.absoluteString)", category: .network)
+        Logger.info("🔑 API Key prefix: \(String(apiKey.prefix(10)))...", category: .network)
+
         // Encode payload
         let encoder = JSONEncoder()
         encoder.keyEncodingStrategy = .convertToSnakeCase
         guard let body = try? encoder.encode(payload) else {
             throw OCRError.parsingError("Failed to encode request")
         }
+
+        print("📦 Request body size: \(body.count) bytes")
+        Logger.info("📦 Request body size: \(body.count) bytes", category: .network)
 
         // Create request
         var request = networkClient.createRequest(
@@ -182,53 +201,166 @@ class LLMOCRClient {
             body: body
         )
         request.timeoutInterval = APIConfig.ocrTimeout
+        print("⏱️ Request timeout set to: \(APIConfig.ocrTimeout) seconds")
 
         // Perform request
         do {
-            let response: OpenAIResponse = try await networkClient.perform(
-                request,
-                decoding: OpenAIResponse.self
-            )
+            print("📡 Performing network request...")
+
+            // Get raw response to log it
+            let (data, httpResponse) = try await URLSession.shared.data(for: request)
+
+            guard let http = httpResponse as? HTTPURLResponse else {
+                throw OCRError.networkError(NetworkError.connectionError(NSError(domain: "HTTP", code: -1)))
+            }
+
+            print("📥 HTTP Status: \(http.statusCode)")
+
+            // Log raw JSON for debugging
+            if let rawJSON = String(data: data, encoding: .utf8) {
+                print("📥 Raw API Response JSON: \(rawJSON.prefix(500))...") // First 500 chars
+                Logger.debug("Raw API Response: \(rawJSON)", category: .network)
+            }
+
+            // Check for error response
+            guard (200...299).contains(http.statusCode) else {
+                if let errorString = String(data: data, encoding: .utf8) {
+                    print("❌ API Error Response: \(errorString)")
+                }
+                throw OCRError.networkError(NetworkError.httpError(statusCode: http.statusCode, data: data))
+            }
+
+            // Decode response
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            let response = try decoder.decode(OpenAIResponse.self, from: data)
+
+            print("✅ Network request completed successfully")
             return response
         } catch let error as NetworkError {
+            print("❌ OCR Network Error: \(error)")
+            Logger.error("OCR Network Error", error: error, category: .network)
             switch error {
-            case .httpError(let statusCode, _):
+            case .httpError(let statusCode, let data):
+                // Log the actual error response
+                print("❌ HTTP Error \(statusCode)")
+                if let data = data, let errorMessage = String(data: data, encoding: .utf8) {
+                    print("❌ OpenAI API Error Response: \(errorMessage)")
+                    Logger.error("OpenAI API Error Response: \(errorMessage)", category: .network)
+                }
                 if statusCode == 429 {
                     throw OCRError.rateLimitExceeded
                 } else if statusCode == 401 {
                     throw OCRError.apiKeyMissing
+                } else if statusCode == 404 {
+                    throw OCRError.parsingError("Model not found. Check if 'gpt-5-mini' is available in your OpenAI account.")
                 }
                 throw OCRError.networkError(error)
-            case .decodingError:
+            case .decodingError(let decodingError):
+                print("❌ JSON Decoding Error: \(decodingError)")
+                Logger.error("JSON Decoding Error: \(decodingError)", category: .network)
                 throw OCRError.parsingError("Invalid API response format")
+            case .connectionError(let connectionError):
+                print("❌ Connection Error: \(connectionError)")
+                Logger.error("Connection Error: \(connectionError)", category: .network)
+                throw OCRError.networkError(error)
             default:
+                print("❌ Unknown Network Error: \(error)")
+                Logger.error("Unknown Network Error: \(error)", category: .network)
                 throw OCRError.networkError(error)
             }
         } catch {
+            print("❌ OCR Unknown Error: \(error)")
+            Logger.error("OCR Unknown Error: \(error)", category: .network)
             throw OCRError.unknownError(error)
         }
     }
 
     /// Parse ingredients from API response
     private func parseIngredients(from response: OpenAIResponse) throws -> [String] {
-        guard let choice = response.choices.first,
-              let content = choice.message.content else {
+        // Log response metadata
+        print("📊 API Response - Model: \(response.model ?? "unknown"), Choices: \(response.choices.count)")
+        if let usage = response.usage {
+            print("📊 Token Usage - Prompt: \(usage.promptTokens ?? 0), Completion: \(usage.completionTokens ?? 0), Total: \(usage.totalTokens ?? 0)")
+        }
+
+        guard let choice = response.choices.first else {
+            print("❌ No choices in response!")
             throw OCRError.noTextDetected
         }
 
-        // Parse JSON from response
-        guard let jsonData = content.data(using: .utf8) else {
+        print("📊 Choice - Finish Reason: \(choice.finishReason ?? "none")")
+        print("📊 Message - Role: \(choice.message.role ?? "none")")
+
+        // Check for refusal
+        if let refusal = choice.message.refusal {
+            print("❌ Model refused request: \(refusal)")
+            throw OCRError.parsingError("Model refused: \(refusal)")
+        }
+
+        guard let content = choice.message.content else {
+            print("❌ No content in message! Full message: role=\(choice.message.role ?? "nil"), content=nil, refusal=\(choice.message.refusal ?? "nil")")
+            throw OCRError.noTextDetected
+        }
+
+        // Log the raw response for debugging
+        print("📄 Raw LLM Response: \(content)")
+        Logger.debug("Raw LLM Response: \(content)", category: .ocr)
+
+        // Extract JSON from response (handle markdown code blocks and extra text)
+        let jsonString = extractJSON(from: content)
+        print("📝 Extracted JSON: \(jsonString)")
+
+        guard let jsonData = jsonString.data(using: .utf8) else {
             throw OCRError.parsingError("Invalid UTF-8 in response")
         }
 
         do {
             let result = try JSONDecoder().decode(IngredientsResponse.self, from: jsonData)
-            return result.ingredients.filter { !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
+            let filteredIngredients = result.ingredients.filter { !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
+            print("✅ Successfully parsed \(filteredIngredients.count) ingredients from JSON")
+            return filteredIngredients
         } catch {
             // If JSON parsing fails, try to extract ingredients from text
-            Logger.warning("Failed to parse JSON, attempting text extraction", category: .ocr)
+            print("⚠️ Failed to parse JSON: \(error)")
+            Logger.warning("Failed to parse JSON (\(error)), attempting text extraction", category: .ocr)
             return try extractIngredientsFromText(content)
         }
+    }
+
+    /// Extract JSON string from LLM response (handles markdown code blocks and extra text)
+    private func extractJSON(from content: String) -> String {
+        var cleaned = content.trimmingCharacters(in: .whitespacesAndNewlines)
+
+        // Remove markdown code blocks: ```json ... ``` or ``` ... ```
+        if cleaned.hasPrefix("```") {
+            // Remove opening ```json or ```
+            if let firstNewline = cleaned.firstIndex(of: "\n") {
+                cleaned = String(cleaned[cleaned.index(after: firstNewline)...])
+            }
+
+            // Remove closing ```
+            if let lastBackticks = cleaned.range(of: "```", options: .backwards) {
+                cleaned = String(cleaned[..<lastBackticks.lowerBound])
+            }
+
+            cleaned = cleaned.trimmingCharacters(in: .whitespacesAndNewlines)
+        }
+
+        // Try to find JSON object boundaries if there's extra text
+        if !cleaned.hasPrefix("{") {
+            if let jsonStart = cleaned.firstIndex(of: "{") {
+                cleaned = String(cleaned[jsonStart...])
+            }
+        }
+
+        if !cleaned.hasSuffix("}") {
+            if let jsonEnd = cleaned.lastIndex(of: "}") {
+                cleaned = String(cleaned[...jsonEnd])
+            }
+        }
+
+        return cleaned.trimmingCharacters(in: .whitespacesAndNewlines)
     }
 
     /// Fallback: Extract ingredients from plain text
@@ -256,7 +388,7 @@ class LLMOCRClient {
 private struct OpenAIRequest: Codable {
     let model: String
     let messages: [OpenAIMessage]
-    let maxTokens: Int
+    let maxCompletionTokens: Int
 }
 
 private struct OpenAIMessage: Codable {
@@ -310,13 +442,24 @@ private struct OpenAIMessage: Codable {
 
 private struct OpenAIResponse: Codable {
     let choices: [Choice]
+    let model: String?
+    let usage: Usage?
 
     struct Choice: Codable {
         let message: Message
+        let finishReason: String?
 
         struct Message: Codable {
+            let role: String?
             let content: String?
+            let refusal: String?  // GPT-5 might refuse certain requests
         }
+    }
+
+    struct Usage: Codable {
+        let promptTokens: Int?
+        let completionTokens: Int?
+        let totalTokens: Int?
     }
 }
 

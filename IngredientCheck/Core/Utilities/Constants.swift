@@ -47,7 +47,7 @@ enum Constants {
 
     // MARK: - Safety Levels
 
-    enum SafetyLevel: String, CaseIterable {
+    enum SafetyLevel: String, CaseIterable, Codable {
         case safe = "safe"
         case caution = "caution"
         case warning = "warning"

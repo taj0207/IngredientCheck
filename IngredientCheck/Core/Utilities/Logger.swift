@@ -27,7 +27,7 @@ struct Logger {
 
     /// Debug level logging
     static func debug(_ message: String, category: Category = .general, file: String = #file, function: String = #function, line: Int = #line) {
-        guard Environment.current.logLevel <= .debug else { return }
+        guard AppEnvironment.current.logLevel <= .debug else { return }
         let log = category.osLog
         let fileName = (file as NSString).lastPathComponent
         os_log(.debug, log: log, "%{public}@ [%{public}@:%d] %{public}@", fileName, function, line, message)
@@ -35,14 +35,14 @@ struct Logger {
 
     /// Info level logging
     static func info(_ message: String, category: Category = .general) {
-        guard Environment.current.logLevel <= .info else { return }
+        guard AppEnvironment.current.logLevel <= .info else { return }
         let log = category.osLog
         os_log(.info, log: log, "%{public}@", message)
     }
 
     /// Warning level logging
     static func warning(_ message: String, category: Category = .general) {
-        guard Environment.current.logLevel <= .warning else { return }
+        guard AppEnvironment.current.logLevel <= .warning else { return }
         let log = category.osLog
         os_log(.default, log: log, "⚠️ %{public}@", message)
     }

@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "source": "firebase-functions",
+    "predeploy": [],
+    "runtime": "nodejs20"
+  },
+  "firestore": {
+    "rules": "firebase-functions/firestore.rules"
+  }
+}

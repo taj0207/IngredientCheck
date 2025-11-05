@@ -30,8 +30,11 @@ struct IngredientCheckApp: App {
     // MARK: - Setup
 
     private func setupApp() {
+        print("========================================")
+        print("🚀 APP STARTED - IngredientCheck v\(Constants.appVersion)")
+        print("========================================")
         Logger.info("IngredientCheck app starting - version \(Constants.appVersion)", category: .general)
-        Logger.info("Environment: \(Environment.current)", category: .general)
+        Logger.info("Environment: \(AppEnvironment.current)", category: .general)
         Logger.info("OCR Provider: \(FeatureFlags.primaryOCRProvider.displayName)", category: .general)
     }
 }

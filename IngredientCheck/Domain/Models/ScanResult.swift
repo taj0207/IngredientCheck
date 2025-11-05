@@ -161,6 +161,20 @@ extension ScanResult {
         // Recalculate overall safety level
         overallSafetyLevel = ScanResult.calculateOverallSafety(from: ingredients)
     }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+
+        try container.encode(id, forKey: .id)
+        try container.encode(ingredients, forKey: .ingredients)
+        try container.encodeIfPresent(productName, forKey: .productName)
+        try container.encodeIfPresent(productBrand, forKey: .productBrand)
+        try container.encode(scanDate, forKey: .scanDate)
+        try container.encodeIfPresent(imageData, forKey: .imageData)
+        try container.encode(overallSafetyLevel, forKey: .overallSafetyLevel)
+        try container.encode(ocrProvider, forKey: .ocrProvider)
+        try container.encode(processingTime, forKey: .processingTime)
+    }
 }
 
 // MARK: - Sample Data

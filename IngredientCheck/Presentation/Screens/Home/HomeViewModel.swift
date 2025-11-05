@@ -32,9 +32,8 @@ class HomeViewModel: ObservableObject {
         self.authService = authService
         self.userRepository = userRepository
 
-        Task {
-            await loadUser()
-        }
+        // Don't call async methods in init - it causes crashes
+        // Let the view call loadUser() in .onAppear instead
     }
 
     // MARK: - Public Methods
