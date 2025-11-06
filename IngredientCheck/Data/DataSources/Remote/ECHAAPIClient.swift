@@ -33,45 +33,31 @@ class ECHAAPIClient {
     /// - Returns: Safety information if found
     /// - Throws: RepositoryError if fetch fails
     func fetchSafetyInfo(for identifier: String) async throws -> SafetyInfo? {
-        Logger.info("Fetching safety data for: \(identifier)", category: .echa)
+        Logger.info("Checking ECHA offline database for: \(identifier)", category: .echa)
 
-        // STEP 1: Check local ECHA regulatory database first (OFFLINE)
+        // Check local ECHA regulatory database (100% OFFLINE - NO API CALLS)
         let regulatorySubstance = await ECHARegulatoryManager.shared.findRegulatory(for: identifier)
 
         if let regulatory = regulatorySubstance {
-            Logger.info("Found in ECHA offline database: \(regulatory.regulatoryStatus) - returning local data", category: .echa)
+            Logger.info("✅ Found in ECHA offline database: \(regulatory.regulatoryStatus)", category: .echa)
             Logger.logECHAQuery(ingredient: identifier, found: true)
-
-            // Return immediately from offline database - NO API CALLS
             return parseSafetyInfoFromRegulatory(regulatory)
         }
 
-        // STEP 2: Not in offline database - Query PubChem API as fallback
-        Logger.info("Not in ECHA offline database, querying PubChem API for: \(identifier)", category: .echa)
-        let substances = try await searchSubstance(query: identifier)
+        // Not in ECHA database - ingredient is likely safe/not regulated
+        Logger.info("Not in ECHA database - likely safe or not regulated: \(identifier)", category: .echa)
+        Logger.logECHAQuery(ingredient: identifier, found: false)
 
-        guard let substance = substances.first else {
-            Logger.logECHAQuery(ingredient: identifier, found: false)
-            return nil
-        }
-
-        Logger.logECHAQuery(ingredient: identifier, found: true)
-
-        // STEP 3: Parse safety info from PubChem GHS data (fallback for non-ECHA substances)
-        if let ghsData = substance.ghsData {
-            return parseSafetyInfoFromPubChem(substance: substance, ghsData: ghsData)
-        }
-
-        // If no GHS data available, return basic info
+        // Return safe/not regulated status (no API call)
         return SafetyInfo(
-            level: .unknown,
+            level: .safe,
             hazardStatements: [],
             precautionaryStatements: [],
             ghsClassifications: [],
             regulatoryStatus: .notRegulated,
             lastUpdated: Date(),
-            sources: ["PubChem"],
-            detailedDescription: "No hazard classification available for \(substance.name)"
+            sources: ["ECHA Offline Database"],
+            detailedDescription: "Not found in EU ECHA regulatory database. No known EU restrictions or hazards."
         )
     }
 
