@@ -35,59 +35,31 @@ class ECHAAPIClient {
     func fetchSafetyInfo(for identifier: String) async throws -> SafetyInfo? {
         Logger.info("Fetching safety data for: \(identifier)", category: .echa)
 
-        // STEP 1: Check local ECHA regulatory database first
-        let regulatoryStatus = await ECHARegulatoryManager.shared.getRegulatoryStatus(for: identifier)
+        // STEP 1: Check local ECHA regulatory database first (OFFLINE)
         let regulatorySubstance = await ECHARegulatoryManager.shared.findRegulatory(for: identifier)
 
         if let regulatory = regulatorySubstance {
-            Logger.info("Found in ECHA regulatory database: \(regulatory.regulatoryStatus)", category: .echa)
+            Logger.info("Found in ECHA offline database: \(regulatory.regulatoryStatus) - returning local data", category: .echa)
+            Logger.logECHAQuery(ingredient: identifier, found: true)
 
-            // If substance is BANNED or RESTRICTED, return regulatory info immediately
-            if regulatory.status == .banned || regulatory.status == .restricted {
-                return parseSafetyInfoFromRegulatory(regulatory)
-            }
+            // Return immediately from offline database - NO API CALLS
+            return parseSafetyInfoFromRegulatory(regulatory)
         }
 
-        // STEP 2: Query PubChem for additional safety data
+        // STEP 2: Not in offline database - Query PubChem API as fallback
+        Logger.info("Not in ECHA offline database, querying PubChem API for: \(identifier)", category: .echa)
         let substances = try await searchSubstance(query: identifier)
 
         guard let substance = substances.first else {
-            // If found in regulatory database but not in PubChem, return regulatory info
-            if let regulatory = regulatorySubstance {
-                Logger.logECHAQuery(ingredient: identifier, found: true)
-                return parseSafetyInfoFromRegulatory(regulatory)
-            }
-
             Logger.logECHAQuery(ingredient: identifier, found: false)
             return nil
         }
 
         Logger.logECHAQuery(ingredient: identifier, found: true)
 
-        // STEP 3: Parse safety info from PubChem GHS data
+        // STEP 3: Parse safety info from PubChem GHS data (fallback for non-ECHA substances)
         if let ghsData = substance.ghsData {
-            var safetyInfo = parseSafetyInfoFromPubChem(substance: substance, ghsData: ghsData)
-
-            // Override regulatory status with ECHA data if more severe
-            if regulatoryStatus == .banned || regulatoryStatus == .restricted || regulatoryStatus == .underReview {
-                safetyInfo = SafetyInfo(
-                    level: safetyInfo.level,
-                    hazardStatements: safetyInfo.hazardStatements,
-                    precautionaryStatements: safetyInfo.precautionaryStatements,
-                    ghsClassifications: safetyInfo.ghsClassifications,
-                    regulatoryStatus: regulatoryStatus,
-                    lastUpdated: safetyInfo.lastUpdated,
-                    sources: safetyInfo.sources + ["ECHA Regulatory Database"],
-                    detailedDescription: regulatorySubstance?.restrictions ?? safetyInfo.detailedDescription
-                )
-            }
-
-            return safetyInfo
-        }
-
-        // If no GHS data but found in regulatory database
-        if let regulatory = regulatorySubstance {
-            return parseSafetyInfoFromRegulatory(regulatory)
+            return parseSafetyInfoFromPubChem(substance: substance, ghsData: ghsData)
         }
 
         // If no GHS data available, return basic info
@@ -96,7 +68,7 @@ class ECHAAPIClient {
             hazardStatements: [],
             precautionaryStatements: [],
             ghsClassifications: [],
-            regulatoryStatus: regulatoryStatus,
+            regulatoryStatus: .notRegulated,
             lastUpdated: Date(),
             sources: ["PubChem"],
             detailedDescription: "No hazard classification available for \(substance.name)"
