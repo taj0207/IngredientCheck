@@ -27,7 +27,8 @@ struct APIConfig {
     static let maxOCRTokens = 4096
 
     /// Timeout for OCR requests (seconds)
-    static let ocrTimeout: TimeInterval = 30
+    /// GPT-5 reasoning models can take 30-60 seconds for complex images
+    static let ocrTimeout: TimeInterval = 90
 
     /// OpenAI API key (loaded from Secrets.swift)
     static var openAIAPIKey: String {
