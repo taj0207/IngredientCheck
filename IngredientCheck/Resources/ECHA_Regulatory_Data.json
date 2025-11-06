@@ -1,207 +1,2894 @@
 {
   "version": "2025.1",
   "lastUpdated": "2025-11-05",
-  "source": "ECHA REACH Candidate List and Annex XVII",
+  "source": "ECHA REACH Candidate List (SVHC) + Annex XVII (Banned/Restricted)",
+  "totalSubstances": 239,
+  "statistics": {
+    "svhc": 231,
+    "banned": 2,
+    "restricted": 6
+  },
   "substances": [
+    {
+      "name": "1,1'-[ethane-1,2-diylbisoxy]bis[2,4,6-tribromobenzene]",
+      "casNumber": "37853-59-1",
+      "ecNumber": "253-692-3",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "2,2',6,6'-tetrabromo-4,4'-isopropylidenediphenol",
+      "casNumber": "79-94-7",
+      "ecNumber": "201-236-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "4,4'-sulphonyldiphenol",
+      "casNumber": "80-09-1,",
+      "ecNumber": "201-250-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Barium diboron tetraoxide",
+      "casNumber": "13701-59-2",
+      "ecNumber": "237-222-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Bis(2-ethylhexyl) tetrabromophthalate covering any of the individual isomers and/or combinations thereof",
+      "casNumber": "-",
+      "ecNumber": "-",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Isobutyl 4-hydroxybenzoate",
+      "casNumber": "4247-02-3,",
+      "ecNumber": "224-208-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Melamine",
+      "casNumber": "108-78-1",
+      "ecNumber": "203-615-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Perfluoroheptanoic acid and its salts",
+      "casNumber": "-",
+      "ecNumber": "-",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "reaction mass of 2,2,3,3,5,5,6,6-octafluoro-4-(1,1,1,2,3,3,3-heptafluoropropan-2-yl)morpholine and 2,2,3,3,5,5,6,6-octafluoro-4-(heptafluoropropyl)morpholine",
+      "casNumber": "-",
+      "ecNumber": "473-390-7",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "N-(hydroxymethyl)acrylamide",
+      "casNumber": "924-42-5",
+      "ecNumber": "213-103-2",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "tris(2-methoxyethoxy)vinylsilane",
+      "casNumber": "1067-53-4",
+      "ecNumber": "213-934-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "S-(tricyclo(5.2.1.0'2,6)deca-3-en-8(or 9)-yl O-(isopropyl or isobutyl or 2-ethylhexyl) O-(isopropyl or isobutyl or 2-ethylhexyl) phosphorodithioate(X4261)",
+      "casNumber": "255881-94-8",
+      "ecNumber": "401-850-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "6,6'-di-tert-butyl-2,2'-methylenedi-p-cresol",
+      "casNumber": "119-47-1",
+      "ecNumber": "204-327-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "(±)-1,7,7-trimethyl-3-[(4-methylphenyl)methylene]bicyclo[2.2.1]heptan-2-one covering any of the individual isomers and/or combinations thereof (4-MBC)",
+      "casNumber": "1782069-81-1, 95342-41-9, 852541-25-4, 36861-47-9, 741687-98-9, 852541-30-1, 852541-21-0",
+      "ecNumber": "-",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Phenol, alkylation products (mainly in para position) with C12-rich branched alkyl chains from oligomerisation, covering any individual isomers and/ or combinations thereof (PDDP)",
+      "casNumber": "210555-94-5, 27459-10-5, 27147-75-7, 121158-58-5, 74499-35-7, 57427-55-1",
+      "ecNumber": "310-154-3",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "orthoboric acid, sodium salt",
+      "casNumber": "25747-83-5, 22454-04-2, 14312-40-4, 1333-73-9, 13840-56-7, 14890-53-0",
+      "ecNumber": "238-253-6, 215-604-1, 237-560-2",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Medium-chain chlorinated paraffins (MCCP)",
+      "casNumber": "1372804-76-6, 85535-85-9, 198840-65-2",
+      "ecNumber": "287-477-0, 950-299-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "glutaral",
+      "casNumber": "111-30-8",
+      "ecNumber": "203-856-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "4,4'-(1-methylpropylidene)bisphenol",
+      "casNumber": "77-40-7",
+      "ecNumber": "201-025-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "2-(4-tert-butylbenzyl)propionaldehyde and its individual stereoisomers",
+      "casNumber": "75166-31-3, 80-54-6, 75166-30-2",
+      "ecNumber": "201-289-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "2,2-bis(bromomethyl)propane-1,3-diol (BMP); 2,2-dimethylpropan-1-ol, tribromo derivative/3-bromo-2,2-bis(bromomethyl)-1-propanol (TBNPA); 2,3-dibromo-1-propanol (2,3-DBPA)",
+      "casNumber": "1522-92-5, 36483-57-5, 3296-90-0, 96-13-9",
+      "ecNumber": "253-057-0, 221-967-7, 202-480-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "1,4-dioxane",
+      "casNumber": "123-91-1",
+      "ecNumber": "204-661-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Dioctyltin dilaurate, stannane, dioctyl-, bis(coco acyloxy) derivs., and any other stannane, dioctyl-, bis(fatty acyloxy) derivs. wherein C12 is the predominant carbon number of the fatty acyloxy moiety",
+      "casNumber": "-",
+      "ecNumber": "-",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Bis(2-(2-methoxyethoxy)ethyl)ether",
+      "casNumber": "143-24-8",
+      "ecNumber": "205-594-7",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Dibutylbis(pentane-2,4-dionato-O,O')tin",
+      "casNumber": "22673-19-4",
+      "ecNumber": "245-152-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "butyl 4-hydroxybenzoate",
+      "casNumber": "94-26-8",
+      "ecNumber": "202-318-7",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "2-methylimidazole",
+      "casNumber": "693-98-1",
+      "ecNumber": "211-765-7",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "1-vinylimidazole",
+      "casNumber": "1072-63-5",
+      "ecNumber": "214-012-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Perfluorobutane sulfonic acid (PFBS) and its salts",
+      "casNumber": "-",
+      "ecNumber": "-",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "2-methyl-1-(4-methylthiophenyl)-2-morpholinopropan-1-one",
+      "casNumber": "71868-10-5",
+      "ecNumber": "400-600-6",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "2-benzyl-2-dimethylamino-4'-morpholinobutyrophenone",
+      "casNumber": "119313-12-1",
+      "ecNumber": "404-360-3",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Diisohexyl phthalate",
+      "casNumber": "71850-09-4",
+      "ecNumber": "276-090-2",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "2-methoxyethyl acetate",
+      "casNumber": "110-49-6",
+      "ecNumber": "203-772-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Tris(4-nonylphenyl, branched and linear) phosphite (TNPP) with ≥ 0.1% w/w of 4-nonylphenol, branched and linear (4-NP)",
+      "casNumber": "-",
+      "ecNumber": "-",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "2,3,3,3-tetrafluoro-2-(heptafluoropropoxy)propionic acid, its salts and its acyl halides (covering any of their individual isomers and combinations thereof)",
+      "casNumber": "-",
+      "ecNumber": "-",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "4-tert-butylphenol",
+      "casNumber": "98-54-4",
+      "ecNumber": "202-679-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "1,7,7-trimethyl-3-(phenylmethylene)bicyclo[2.2.1]heptan-2-one (3-benzylidene camphor; 3-BC)",
+      "casNumber": "15087-24-8",
+      "ecNumber": "239-139-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "2,2-bis(4'-hydroxyphenyl)-4-methylpentane",
+      "casNumber": "6807-17-6",
+      "ecNumber": "401-720-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Benzo[k]fluoranthene",
+      "casNumber": "207-08-9",
+      "ecNumber": "205-916-6",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Fluoranthene",
+      "casNumber": "206-44-0; 93951-69-0",
+      "ecNumber": "205-912-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Phenanthrene",
+      "casNumber": "85-01-8",
+      "ecNumber": "201-581-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Pyrene",
+      "casNumber": "129-00-0; 1718-52-1",
+      "ecNumber": "204-927-3",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Benzo[ghi]perylene",
+      "casNumber": "191-24-2",
+      "ecNumber": "205-883-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Decamethylcyclopentasiloxane (D5)",
+      "casNumber": "541-02-6",
+      "ecNumber": "208-764-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Disodium octaborate",
+      "casNumber": "12008-41-2",
+      "ecNumber": "234-541-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Dodecamethylcyclohexasiloxane(D6)",
+      "casNumber": "540-97-6",
+      "ecNumber": "208-762-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Ethylenediamine",
+      "casNumber": "107-15-3",
+      "ecNumber": "203-468-6",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
     {
       "name": "Lead",
       "casNumber": "7439-92-1",
       "ecNumber": "231-100-4",
       "regulatoryStatus": "RESTRICTED",
-      "list": "Annex XVII",
+      "list": "Annex XVII Entry 63",
       "category": "Heavy Metal",
       "restrictions": "Banned in consumer products above 0.05% by weight",
-      "hazards": ["Toxic to reproduction", "Carcinogenic", "Neurotoxic"]
+      "hazards": [
+        "Toxic to reproduction",
+        "Carcinogenic",
+        "Neurotoxic"
+      ]
     },
     {
-      "name": "Mercury",
-      "casNumber": "7439-97-6",
-      "ecNumber": "231-106-7",
-      "regulatoryStatus": "BANNED",
-      "list": "Annex XVII",
-      "category": "Heavy Metal",
-      "restrictions": "Banned in most consumer products",
-      "hazards": ["Toxic", "Bioaccumulative", "Neurotoxic"]
+      "name": "Octamethylcyclotetrasiloxane(D4)",
+      "casNumber": "556-67-2",
+      "ecNumber": "209-136-7",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Terphenyl, hydrogenated",
+      "casNumber": "61788-32-7",
+      "ecNumber": "262-967-7",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Dicyclohexyl phthalate (DCHP)",
+      "casNumber": "84-61-7",
+      "ecNumber": "201-545-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "benzene-1,2,4-tricarboxylic acid 1,2 anhydride (trimellitic anhydride)(TMA)",
+      "casNumber": "552-30-7",
+      "ecNumber": "209-008-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Benz[a]anthracene",
+      "casNumber": "56-55-3, 1718-53-2",
+      "ecNumber": "200-280-6",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Cadmium carbonate",
+      "casNumber": "513-78-0",
+      "ecNumber": "208-168-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Cadmium hydroxide",
+      "casNumber": "21041-95-2",
+      "ecNumber": "244-168-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Cadmium nitrate",
+      "casNumber": "10022-68-1, 10325-94-7",
+      "ecNumber": "233-710-6",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Chrysene",
+      "casNumber": "218-01-9, 1719-03-5",
+      "ecNumber": "205-923-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Dodecachloropentacyclo[12.2.1.16,9.02,13.05,10]octadeca-7,15-diene (“Dechlorane Plus”™)",
+      "casNumber": "-",
+      "ecNumber": "-",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Reaction products of 1,3,4-thiadiazolidine-2,5-dithione, formaldehyde and 4-heptylphenol, branched and linear (RP-HP)",
+      "casNumber": "-",
+      "ecNumber": "-",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Perfluorohexane-1-sulphonic acid and its salts (PFHxS)",
+      "casNumber": "-",
+      "ecNumber": "-",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "4,4'-isopropylidenediphenol (bisphenol A)",
+      "casNumber": "80-05-7",
+      "ecNumber": "201-245-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "nonadecafluorodecanoic acid (PFDA) and its sodium and ammonium salts",
+      "casNumber": "335-76-2",
+      "ecNumber": "206-400-3",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "4-heptylphenol, branched and linear (4-HPbl)",
+      "casNumber": "-",
+      "ecNumber": "-",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "p-(1,1-dimethylpropyl)phenol (PTAP)",
+      "casNumber": "80-46-6",
+      "ecNumber": "201-280-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Benzo[def]chrysene",
+      "casNumber": "50-32-8",
+      "ecNumber": "200-028-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Nitrobenzene",
+      "casNumber": "98-95-3",
+      "ecNumber": "202-716-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "2,4-di-tert-butyl-6-(5-chlorobenzotriazol-2-yl)phenol (UV-327)",
+      "casNumber": "3864-99-1",
+      "ecNumber": "223-383-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "2-(2H-benzotriazol-2-yl)-4-(tert-butyl)-6-(sec-butyl)phenol (UV-350)",
+      "casNumber": "36437-37-3",
+      "ecNumber": "253-037-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "1,3-propanesultone",
+      "casNumber": "1120-71-4",
+      "ecNumber": "214-317-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Perfluorononan-1-oic-acid and its sodium and ammonium salts",
+      "casNumber": "375-95-1, 21049-39-8, 4149-60-4",
+      "ecNumber": "206-801-3",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "1,2-benzenedicarboxylic acid, di-C6-10-alkyl esters; 1,2-benzenedicarboxylic acid, mixed decyl and hexyl and octyl diesters with ≥ 0.3% of dihexyl phthalate (EC No. 201-559-5)",
+      "casNumber": "68515-51-5, 68648-93-1",
+      "ecNumber": "271-094-0, 272-013-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "5-sec-butyl-2-(2,4-dimethylcyclohex-3-en-1-yl)-5-methyl-1,3-dioxane [1], 5-sec-butyl-2-(4,6-dimethylcyclohex-3-en-1-yl)-5-methyl-1,3-dioxane [2] [covering any of the individual stereoisomers of [1] and [2] or any combination thereof]",
+      "casNumber": null,
+      "ecNumber": null,
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Bis (2-ethylhexyl)phthalate (DEHP)",
+      "casNumber": "117-81-7",
+      "ecNumber": "204-211-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "2-(2H-benzotriazol-2-yl)-4,6-ditertpentylphenol (UV-328)",
+      "casNumber": "25973-55-1",
+      "ecNumber": "247-384-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "2-benzotriazol-2-yl-4,6-di-tert-butylphenol (UV-320)",
+      "casNumber": "3846-71-7",
+      "ecNumber": "223-346-6",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "2-ethylhexyl 10-ethyl-4,4-dioctyl-7-oxo-8-oxa-3,5-dithia-4-stannatetradecanoate (DOTE)",
+      "casNumber": "15571-58-1",
+      "ecNumber": "239-622-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Cadmium fluoride",
+      "casNumber": "7790-79-6",
+      "ecNumber": "232-222-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Cadmium sulphate",
+      "casNumber": "10124-36-4, 31119-53-6",
+      "ecNumber": "233-331-6",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "reaction mass of 2-ethylhexyl 10-ethyl-4,4-dioctyl-7-oxo-8-oxa-3,5-dithia-4-stannatetradecanoate and 2-ethylhexyl 10-ethyl-4-[[2-[(2-ethylhexyl)oxy]-2-oxoethyl]thio]-4-octyl-7-oxo-8-oxa-3,5-dithia-4-stannatetradecanoate (reaction mass of DOTE and MOTE)",
+      "casNumber": null,
+      "ecNumber": null,
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "1,2-Benzenedicarboxylic acid, dihexylester, branched and linear",
+      "casNumber": "68515-50-4",
+      "ecNumber": "271-093-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Cadmium chloride",
+      "casNumber": "10108-64-2",
+      "ecNumber": "233-296-7",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Sodium perborate,perboric acid, sodium salt",
+      "casNumber": null,
+      "ecNumber": "239-172-9, 234-390-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Sodium peroxometaborate",
+      "casNumber": "7632-4-4,",
+      "ecNumber": "231-556-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Cadmium sulphide",
+      "casNumber": "1306-23-6",
+      "ecNumber": "215-147-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Dihexyl phthalate",
+      "casNumber": "84-75-3",
+      "ecNumber": "201-559-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Disodium 3,3'-[[1,1'-biphenyl]-4,4'-diylbis(azo)]bis(4-aminonaphthalene-1-sulphonate) (C.I. Direct Red 28)",
+      "casNumber": "573-58-0",
+      "ecNumber": "209-358-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Disodium 4-amino-3-[[4'-[(2,4-diaminophenyl)azo][1,1'-biphenyl]-4-yl]azo] -5-hydroxy-6-(phenylazo)naphthalene-2,7-disulphonate (C.I. Direct Black 38)",
+      "casNumber": "1937-37-7",
+      "ecNumber": "217-710-3",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Imidazolidine-2-thione (2-imidazoline-2-thiol)",
+      "casNumber": "96-45-7",
+      "ecNumber": "202-506-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Lead di(acetate)",
+      "casNumber": "301-04-2",
+      "ecNumber": "206-104-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Trixylyl phosphate",
+      "casNumber": "25155-23-1",
+      "ecNumber": "246-677-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "4-Nonylphenol, branched and linear, ethoxylated [substances with a linear and/or branched alkyl chain with a carbon number of 9 covalently bound in position 4 to phenol, ethoxylated covering UVCB- and well-defined substances, polymers and homologues, which include any of the individual isomers and/or combinations thereof]",
+      "casNumber": null,
+      "ecNumber": null,
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Ammonium pentadecafluorooctanoate (APFO)",
+      "casNumber": "3825-26-1",
+      "ecNumber": "223-320-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
     },
     {
       "name": "Cadmium",
       "casNumber": "7440-43-9",
       "ecNumber": "231-152-8",
       "regulatoryStatus": "RESTRICTED",
-      "list": "Annex XVII",
+      "list": "Annex XVII Entry 23",
       "category": "Heavy Metal",
       "restrictions": "Banned in jewelry, plastics >0.01%",
-      "hazards": ["Carcinogenic", "Toxic to reproduction", "Toxic to organs"]
+      "hazards": [
+        "Carcinogenic",
+        "Toxic to reproduction",
+        "Toxic to organs"
+      ]
     },
     {
-      "name": "Asbestos",
-      "casNumber": "1332-21-4",
-      "ecNumber": "215-609-9",
-      "regulatoryStatus": "BANNED",
-      "list": "Annex XVII",
-      "category": "Mineral Fiber",
-      "restrictions": "Completely banned in EU",
-      "hazards": ["Carcinogenic", "Respiratory hazard", "Fatal if inhaled"]
-    },
-    {
-      "name": "Benzene",
-      "casNumber": "71-43-2",
-      "ecNumber": "200-753-7",
+      "name": "Cadmium oxide",
+      "casNumber": "1306-19-0",
+      "ecNumber": "215-146-2",
       "regulatoryStatus": "SVHC",
       "list": "Candidate List",
-      "category": "Aromatic Hydrocarbon",
-      "restrictions": "Restricted in consumer products >0.1%",
-      "hazards": ["Carcinogenic", "Mutagenic", "Highly flammable"]
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
     },
     {
-      "name": "Formaldehyde",
-      "casNumber": "50-00-0",
-      "ecNumber": "200-001-8",
+      "name": "Dipentyl phthalate (DPP)",
+      "casNumber": "131-18-0",
+      "ecNumber": "205-017-9",
       "regulatoryStatus": "SVHC",
       "list": "Candidate List",
-      "category": "Aldehyde",
-      "restrictions": "Restricted in cosmetics and textiles",
-      "hazards": ["Carcinogenic", "Skin sensitizer", "Toxic if inhaled"]
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
     },
     {
-      "name": "Bis(2-ethylhexyl) phthalate (DEHP)",
-      "casNumber": "117-81-7",
-      "ecNumber": "204-211-0",
+      "name": "Pentadecafluorooctanoic acid (PFOA)",
+      "casNumber": "335-67-1",
+      "ecNumber": "206-397-9",
       "regulatoryStatus": "SVHC",
-      "list": "Candidate List, Annex XIV",
-      "category": "Phthalate",
-      "restrictions": "Authorization required, banned in toys and childcare articles",
-      "hazards": ["Toxic to reproduction", "Endocrine disruptor"]
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
     },
     {
-      "name": "Dibutyl phthalate (DBP)",
-      "casNumber": "84-74-2",
-      "ecNumber": "201-557-4",
+      "name": "1,2-Benzenedicarboxylic acid, dipentylester, branched and linear",
+      "casNumber": "84777-06-0",
+      "ecNumber": "284-032-2",
       "regulatoryStatus": "SVHC",
-      "list": "Candidate List, Annex XIV",
-      "category": "Phthalate",
-      "restrictions": "Authorization required, banned in toys",
-      "hazards": ["Toxic to reproduction", "Endocrine disruptor"]
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "1,2-Diethoxyethane",
+      "casNumber": "629-14-1",
+      "ecNumber": "211-076-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "1-bromopropane (n-propyl bromide)",
+      "casNumber": "106-94-5",
+      "ecNumber": "203-445-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "3-ethyl-2-methyl-2-(3-methylbutyl)-1,3-oxazolidine",
+      "casNumber": "143860-04-2",
+      "ecNumber": "421-150-7",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "4,4'-methylenedi-o-toluidine",
+      "casNumber": "838-88-0",
+      "ecNumber": "212-658-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "4,4'-oxydianiline and its salts",
+      "casNumber": "101-80-4",
+      "ecNumber": "202-977-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "4-(1,1,3,3-tetramethylbutyl)phenol, ethoxylated [covering well-defined substances and UVCB substances, polymers and homologues]",
+      "casNumber": null,
+      "ecNumber": null,
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "4-Aminoazobenzene",
+      "casNumber": "60-09-3",
+      "ecNumber": "200-453-6",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "4-methyl-m-phenylenediamine (toluene-2,4-diamine)",
+      "casNumber": "95-80-7",
+      "ecNumber": "202-453-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "4-Nonylphenol, branched and linear [substances with a linear and/or branched alkyl chain with a carbon number of 9 covalently bound in position 4 to phenol, covering also UVCB- and well-defined substances which include any of the individual isomers or a combination thereof]",
+      "casNumber": null,
+      "ecNumber": null,
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "6-methoxy-m-toluidine (p-cresidine)",
+      "casNumber": "120-71-8",
+      "ecNumber": "204-419-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "[Phthalato(2-)]dioxotrilead",
+      "casNumber": "69011-06-9",
+      "ecNumber": "273-688-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Acetic acid, lead salt, basic",
+      "casNumber": "51404-69-4",
+      "ecNumber": "257-175-3",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Biphenyl-4-ylamine",
+      "casNumber": "92-67-1",
+      "ecNumber": "202-177-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Bis(pentabromophenyl) ether (decabromodiphenyl ether) (DecaBDE)",
+      "casNumber": "1163-19-5",
+      "ecNumber": "214-604-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Cyclohexane-1,2-dicarboxylic anhydride [1],  cis-cyclohexane-1,2-dicarboxylic anhydride [2],  trans-cyclohexane-1,2-dicarboxylic anhydride [3] [The individual cis- [2] and trans- [3] isomer substances and all possible combinations of the cis- and trans-isomers [1] are covered by this entry]",
+      "casNumber": "85-42-7, 13149-00-3, 14166-21-3",
+      "ecNumber": "201-604-9, 236-086-3, 238-009-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Diazene-1,2-dicarboxamide (C,C`-azodi(formamide)) (ADCA)",
+      "casNumber": "123-77-3",
+      "ecNumber": "204-650-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Dibutyltin dichloride (DBTC)",
+      "casNumber": "683-18-1",
+      "ecNumber": "211-670-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Diethyl sulphate",
+      "casNumber": "64-67-5",
+      "ecNumber": "200-589-6",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Diisopentylphthalate",
+      "casNumber": "605-50-5",
+      "ecNumber": "210-088-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Dimethyl sulphate",
+      "casNumber": "77-78-1",
+      "ecNumber": "201-058-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Dinoseb (6-sec-butyl-2,4-dinitrophenol)",
+      "casNumber": "88-85-7",
+      "ecNumber": "201-861-7",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Dioxobis(stearato)trilead",
+      "casNumber": "12578-12-0",
+      "ecNumber": "235-702-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Fatty acids, C16-18, lead salts",
+      "casNumber": "91031-62-8",
+      "ecNumber": "292-966-7",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Furan",
+      "casNumber": "110-00-9",
+      "ecNumber": "203-727-3",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Henicosafluoroundecanoic acid",
+      "casNumber": "2058-94-8",
+      "ecNumber": "218-165-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Heptacosafluorotetradecanoic acid",
+      "casNumber": "376-06-7",
+      "ecNumber": "206-803-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Hexahydromethylphthalic anhydride [1],  Hexahydro-4-methylphthalic anhydride [2],  Hexahydro-1-methylphthalic anhydride [3], Hexahydro-3-methylphthalic anhydride [4] [The individual isomers [2], [3] and [4] (including their cis- and trans- stereo isomeric forms) and all possible combinations of the isomers [1] are covered by this entry]",
+      "casNumber": "25550-51-0, 19438-60-9, 48122-14-1, 57110-29-9",
+      "ecNumber": "247-094-1, 243-072-0, 256-356-4, 260-566-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Lead bis(tetrafluoroborate)",
+      "casNumber": "13814-96-5",
+      "ecNumber": "237-486-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Lead cyanamidate",
+      "casNumber": "20837-86-9",
+      "ecNumber": "244-073-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Lead dinitrate",
+      "casNumber": "10099-74-8",
+      "ecNumber": "233-245-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Lead monoxide (lead oxide)",
+      "casNumber": "1317-36-8",
+      "ecNumber": "215-267-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Lead oxide sulfate",
+      "casNumber": "12036-76-9",
+      "ecNumber": "234-853-7",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Lead titanium trioxide",
+      "casNumber": "12060-00-3",
+      "ecNumber": "235-038-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Lead titanium zirconium oxide",
+      "casNumber": "12626-81-2",
+      "ecNumber": "235-727-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Methoxyacetic acid",
+      "casNumber": "625-45-6",
+      "ecNumber": "210-894-6",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Methyloxirane (Propylene oxide)",
+      "casNumber": "75-56-9",
+      "ecNumber": "200-879-2",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "N,N-dimethylformamide",
+      "casNumber": "68-12-2",
+      "ecNumber": "200-679-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "N-methylacetamide",
+      "casNumber": "79-16-3",
+      "ecNumber": "201-182-6",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "N-pentyl-isopentylphthalate",
+      "casNumber": "776297-69-9",
+      "ecNumber": null,
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "o-aminoazotoluene",
+      "casNumber": "97-56-3",
+      "ecNumber": "202-591-2",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "o-Toluidine",
+      "casNumber": "95-53-4",
+      "ecNumber": "202-429-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Orange lead (lead tetroxide)",
+      "casNumber": "1314-41-6",
+      "ecNumber": "215-235-6",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Pentacosafluorotridecanoic acid",
+      "casNumber": "72629-94-8",
+      "ecNumber": "276-745-2",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Pentalead tetraoxide sulphate",
+      "casNumber": "12065-90-6",
+      "ecNumber": "235-067-7",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Pyrochlore, antimony lead yellow",
+      "casNumber": "8012-00-8",
+      "ecNumber": "232-382-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Silicic acid (H<sub>2</sub>Si<sub>2</sub>O<sub>5</sub>), barium salt (1:1), lead-doped    [with lead (Pb) content above the applicable generic concentration limit for ’toxicity for reproduction’ Repr. 1A (CLP) or category 1 (DSD),the substance is a member of the group entry of lead compounds, with index number 082-001-00-6 in Regulation (EC) No 1272/2008]",
+      "casNumber": "68784-75-8",
+      "ecNumber": "272-271-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Silicic acid, lead salt",
+      "casNumber": "11120-22-2",
+      "ecNumber": "234-363-3",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Sulfurous acid, lead salt, dibasic",
+      "casNumber": "62229-08-7",
+      "ecNumber": "263-467-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Tetraethyllead",
+      "casNumber": "78-00-2",
+      "ecNumber": "201-075-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Tetralead trioxide sulphate",
+      "casNumber": "12202-17-4",
+      "ecNumber": "235-380-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Tricosafluorododecanoic acid",
+      "casNumber": "307-55-1",
+      "ecNumber": "206-203-2",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Trilead bis(carbonate) dihydroxide",
+      "casNumber": "1319-46-6",
+      "ecNumber": "215-290-6",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Trilead dioxide phosphonate",
+      "casNumber": "12141-20-7",
+      "ecNumber": "235-252-2",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "1,2-bis(2-methoxyethoxy)ethane (TEGDME,triglyme)",
+      "casNumber": "112-49-2",
+      "ecNumber": "203-977-3",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "1,2-dimethoxyethane,ethylene glycol dimethyl ether (EGDME)",
+      "casNumber": "110-71-4",
+      "ecNumber": "203-794-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "1,3,5-Tris(oxiran-2-ylmethyl)-1,3,5-triazinane-2,4,6-trione (TGIC)",
+      "casNumber": "2451-62-9",
+      "ecNumber": "219-514-3",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "1,3,5-tris[(2S and 2R)-2,3-epoxypropyl]-1,3,5-triazine-2,4,6-(1H,3H,5H)-trione (β-TGIC)",
+      "casNumber": "59653-74-6",
+      "ecNumber": "423-400-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "4,4'-bis(dimethylamino)-4''-(methylamino)trityl alcohol [with ≥ 0.1% of Michler's ketone (EC No. 202-027-5) or Michler's base (EC No. 202-959-2)]",
+      "casNumber": "561-41-1",
+      "ecNumber": "209-218-2",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "4,4'-bis(dimethylamino)benzophenone (Michler’s ketone)",
+      "casNumber": "90-94-8",
+      "ecNumber": "202-027-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "[4-[4,4'-bis(dimethylamino) benzhydrylidene]cyclohexa-2,5-dien-1-ylidene]dimethylammonium chloride (C.I. Basic Violet 3) [with ≥ 0.1% of Michler's ketone (EC No. 202-027-5) or Michler's base (EC No. 202-959-2)]",
+      "casNumber": "548-62-9",
+      "ecNumber": "208-953-6",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "[4-[[4-anilino-1-naphthyl][4-(dimethylamino)phenyl]methylene]cyclohexa-2,5-dien-1-ylidene] dimethylammonium chloride (C.I. Basic Blue 26) [with ≥ 0.1% of Michler's ketone (EC No. 202-027-5) or Michler's base (EC No. 202-959-2)]",
+      "casNumber": "2580-56-5",
+      "ecNumber": "219-943-6",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Diboron trioxide",
+      "casNumber": "1303-86-2",
+      "ecNumber": "215-125-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Formamide",
+      "casNumber": "75-12-7",
+      "ecNumber": "200-842-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Lead(II) bis(methanesulfonate)",
+      "casNumber": "17570-76-2",
+      "ecNumber": "401-750-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "N,N,N',N'-tetramethyl-4,4'-methylenedianiline (Michler’s base)",
+      "casNumber": "101-61-1",
+      "ecNumber": "202-959-2",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "α,α-Bis[4-(dimethylamino)phenyl]-4 (phenylamino)naphthalene-1-methanol  (C.I. Solvent Blue 4) [with ≥ 0.1% of Michler's ketone (EC No. 202-027-5) or Michler's base (EC No. 202-959-2)]",
+      "casNumber": "6786-83-0",
+      "ecNumber": "229-851-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "1,2-Dichloroethane",
+      "casNumber": "107-06-2",
+      "ecNumber": "203-458-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "2,2'-dichloro-4,4'-methylenedianiline (MOCA)",
+      "casNumber": "101-14-4",
+      "ecNumber": "202-918-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "2-Methoxyaniline,o-Anisidine",
+      "casNumber": "90-04-0",
+      "ecNumber": "201-963-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "4-(1,1,3,3-tetramethylbutyl)phenol",
+      "casNumber": "140-66-9",
+      "ecNumber": "205-426-2",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Aluminosilicate Refractory Ceramic Fibres are fibres covered by index number 650-017-00-8 in Annex VI, part 3, table 3.1 of Regulation (EC) No 1272/2008 of the European Parliament and of the Council of 16 December 2008 on classification, labelling and packaging of substances and mixtures, and fulfil the three following conditions: a) oxides of aluminium and silicon are the main components present (in the fibres) within variable concentration ranges b) fibres have a length weighted geometric mean diameter less two standard geometric errors of 6 or less micrometres (µm) c) alkaline oxide and alkali earth oxide (Na2O+K2O+CaO+MgO+BaO) content less or equal to 18% by weight",
+      "casNumber": null,
+      "ecNumber": null,
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Arsenic acid",
+      "casNumber": "7778-39-4",
+      "ecNumber": "231-901-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Bis(2-methoxyethyl) ether",
+      "casNumber": "111-96-6",
+      "ecNumber": "203-924-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Bis(2-methoxyethyl) phthalate",
+      "casNumber": "117-82-8",
+      "ecNumber": "204-212-6",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Calcium arsenate",
+      "casNumber": "7778-44-1",
+      "ecNumber": "231-904-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Dichromium tris(chromate)",
+      "casNumber": "24613-89-6",
+      "ecNumber": "246-356-2",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Formaldehyde, oligomeric reaction products with aniline",
+      "casNumber": "25214-70-4",
+      "ecNumber": "500-036-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Lead diazide, Lead azide",
+      "casNumber": "13424-46-9",
+      "ecNumber": "236-542-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Lead dipicrate",
+      "casNumber": "6477-64-1",
+      "ecNumber": "229-335-2",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Lead styphnate",
+      "casNumber": "15245-44-0",
+      "ecNumber": "239-290-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "N,N-dimethylacetamide",
+      "casNumber": "127-19-5",
+      "ecNumber": "204-826-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Pentazinc chromate octahydroxide",
+      "casNumber": "49663-84-5",
+      "ecNumber": "256-418-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Phenolphthalein",
+      "casNumber": "77-09-8",
+      "ecNumber": "201-004-7",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Potassium hydroxyoctaoxodizincatedichromate",
+      "casNumber": "11103-86-9",
+      "ecNumber": "234-329-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Trilead diarsenate",
+      "casNumber": "3687-31-8",
+      "ecNumber": "222-979-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Zirconia Aluminosilicate Refractory Ceramic Fibres are fibres covered by index number 650-017-00-8 in Annex VI, part 3, table 3.1 of Regulation (EC) No 1272/2008 of the European Parliament and of the Council of 16 December 2008 on classification, labelling and packaging of substances and mixtures, and fulfil the three following conditions: a) oxides of aluminium, silicon and zirconium are the main components present (in the fibres) within variable concentration ranges b) fibres have a length weighted geometric mean diameter less two standard geometric errors of 6 or less micrometres (µm). c) alkaline oxide and alkali earth oxide (Na2O+K2O+CaO+MgO+BaO) content less or equal to 18% by weight",
+      "casNumber": null,
+      "ecNumber": null,
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Cobalt dichloride",
+      "casNumber": "7646-79-9",
+      "ecNumber": "231-589-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "1,2,3-trichloropropane",
+      "casNumber": "96-18-4",
+      "ecNumber": "202-486-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "1,2-Benzenedicarboxylic acid, di-C6-8-branched alkyl esters, C7-rich",
+      "casNumber": "71888-89-6",
+      "ecNumber": "276-158-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "1,2-Benzenedicarboxylic acid, di-C7-11-branched and linear alkyl esters",
+      "casNumber": "68515-42-4",
+      "ecNumber": "271-084-6",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "1-Methyl-2-pyrrolidone (NMP)",
+      "casNumber": "872-50-4",
+      "ecNumber": "212-828-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "2-Ethoxyethyl acetate",
+      "casNumber": "111-15-9",
+      "ecNumber": "203-839-2",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Hydrazine",
+      "casNumber": "302-01-2, 7803-57-8",
+      "ecNumber": "206-114-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Strontium chromate",
+      "casNumber": "7789-6-2,",
+      "ecNumber": "232-142-6",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "2-Ethoxyethanol",
+      "casNumber": "110-80-5",
+      "ecNumber": "203-804-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "2-Methoxyethanol",
+      "casNumber": "109-86-4",
+      "ecNumber": "203-713-7",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Acids generated from chromium trioxide and their oligomers. Names of the acids and their oligomers: Chromic acid, Dichromic acid, Oligomers of chromic acid and dichromic acid.",
+      "casNumber": "7738-94-5, 13530-68-2",
+      "ecNumber": "231-801-5, 236-881-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Chromium trioxide",
+      "casNumber": "1333-82-0",
+      "ecNumber": "215-607-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Cobalt(II) carbonate",
+      "casNumber": "513-79-1",
+      "ecNumber": "208-169-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Cobalt(II) diacetate",
+      "casNumber": "71-48-7",
+      "ecNumber": "200-755-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Cobalt(II) dinitrate",
+      "casNumber": "10141-05-6",
+      "ecNumber": "233-402-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Cobalt(II) sulphate",
+      "casNumber": "10124-43-3",
+      "ecNumber": "233-334-2",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Ammonium dichromate",
+      "casNumber": "7789-9-5,",
+      "ecNumber": "232-143-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Boric acid",
+      "casNumber": "10043-35-3, 11113-50-1",
+      "ecNumber": "233-139-2, 234-343-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Disodium tetraborate, anhydrous",
+      "casNumber": "1303-96-4, 1330-43-4, 12179-04-3",
+      "ecNumber": "215-540-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Potassium chromate",
+      "casNumber": "7789-00-6",
+      "ecNumber": "232-140-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Potassium dichromate",
+      "casNumber": "7778-50-9",
+      "ecNumber": "231-906-6",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Sodium chromate",
+      "casNumber": "7775-11-3,",
+      "ecNumber": "231-889-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Tetraboron disodium heptaoxide, hydrate",
+      "casNumber": "12267-73-1",
+      "ecNumber": "235-541-3",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Trichloroethylene",
+      "casNumber": "79-01-6",
+      "ecNumber": "201-167-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Acrylamide",
+      "casNumber": "79-06-1",
+      "ecNumber": "201-173-7",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "2,4-Dinitrotoluene (2,4-DNT)",
+      "casNumber": "121-14-2",
+      "ecNumber": "204-450-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Anthracene oil",
+      "casNumber": "90640-80-5",
+      "ecNumber": "292-602-7",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Anthracene oil, anthracene paste",
+      "casNumber": "90640-81-6",
+      "ecNumber": "292-603-2",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Anthracene oil, anthracene paste, anthracene fraction",
+      "casNumber": "91995-15-2",
+      "ecNumber": "295-275-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Anthracene oil, anthracene paste, distn. lights",
+      "casNumber": "91995-17-4",
+      "ecNumber": "295-278-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Anthracene oil, anthracene-low",
+      "casNumber": "90640-82-7",
+      "ecNumber": "292-604-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Diisobutyl phthalate (DIBP)",
+      "casNumber": "84-69-5",
+      "ecNumber": "201-553-2",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Lead chromate",
+      "casNumber": "7758-97-6",
+      "ecNumber": "231-846-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Lead chromate molybdate sulphate red (C.I. Pigment Red 104)",
+      "casNumber": "12656-85-8",
+      "ecNumber": "235-759-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Lead sulfochromate yellow (C.I. Pigment Yellow 34)",
+      "casNumber": "1344-37-2",
+      "ecNumber": "215-693-7",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Pitch, coal tar, high temp.",
+      "casNumber": "65996-93-2",
+      "ecNumber": "266-028-2",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Tris(2-chloroethyl)phosphate",
+      "casNumber": "115-96-8",
+      "ecNumber": "204-118-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "4,4'- Diaminodiphenylmethane (MDA)",
+      "casNumber": "101-77-9",
+      "ecNumber": "202-974-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "5-tert-butyl-2,4,6-trinitro-m-xylene (Musk xylene)",
+      "casNumber": "81-15-2",
+      "ecNumber": "201-329-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Alkanes, C10-13, chloro (Short Chain Chlorinated Paraffins)",
+      "casNumber": "85535-84-8",
+      "ecNumber": "287-476-5",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Anthracene",
+      "casNumber": "120-12-7",
+      "ecNumber": "204-371-1",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
     },
     {
       "name": "Benzyl butyl phthalate (BBP)",
       "casNumber": "85-68-7",
       "ecNumber": "201-622-7",
       "regulatoryStatus": "SVHC",
-      "list": "Candidate List, Annex XIV",
-      "category": "Phthalate",
-      "restrictions": "Authorization required, banned in toys",
-      "hazards": ["Toxic to reproduction", "Endocrine disruptor"]
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
     },
     {
-      "name": "Bisphenol A (BPA)",
-      "casNumber": "80-05-7",
-      "ecNumber": "201-245-8",
+      "name": "Bis(tributyltin) oxide (TBTO)",
+      "casNumber": "56-35-9",
+      "ecNumber": "200-268-0",
       "regulatoryStatus": "SVHC",
       "list": "Candidate List",
-      "category": "Phenol",
-      "restrictions": "Banned in baby bottles, restricted in food contact materials",
-      "hazards": ["Endocrine disruptor", "Toxic to reproduction"]
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Diarsenic pentaoxide",
+      "casNumber": "1303-28-2",
+      "ecNumber": "215-116-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Diarsenic trioxide",
+      "casNumber": "1327-53-3",
+      "ecNumber": "215-481-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Dibutyl phthalate (DBP)",
+      "casNumber": "84-74-2",
+      "ecNumber": "201-557-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Hexabromocyclododecane (HBCDD) and all major diastereoisomers identified: Alpha-hexabromocyclododecane Beta-hexabromocyclododecane Gamma-hexabromocyclododecane",
+      "casNumber": "25637-99-4, 3194-55-6, 134237-50-6, 134237-51-7, 134237-52-8",
+      "ecNumber": "247-148-4, 221-695-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Lead hydrogen arsenate",
+      "casNumber": "7784-40-9",
+      "ecNumber": "232-064-2",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Sodium dichromate",
+      "casNumber": "7789-12-0, 10588-01-9",
+      "ecNumber": "234-190-3",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Triethyl arsenate",
+      "casNumber": "15606-95-8",
+      "ecNumber": "427-700-2",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Substance of Very High Concern",
+      "restrictions": "SVHC - May require authorization for use, subject to restriction",
+      "hazards": [
+        "Substance of Very High Concern under REACH"
+      ]
+    },
+    {
+      "name": "Asbestos",
+      "casNumber": "1332-21-4",
+      "ecNumber": "215-609-9",
+      "regulatoryStatus": "BANNED",
+      "list": "Annex XVII Entry 6",
+      "category": "Mineral Fiber",
+      "restrictions": "Completely banned in EU",
+      "hazards": [
+        "Carcinogenic",
+        "Respiratory hazard",
+        "Fatal if inhaled"
+      ]
+    },
+    {
+      "name": "Mercury",
+      "casNumber": "7439-97-6",
+      "ecNumber": "231-106-7",
+      "regulatoryStatus": "BANNED",
+      "list": "Annex XVII Entry 18a",
+      "category": "Heavy Metal",
+      "restrictions": "Banned in most consumer products",
+      "hazards": [
+        "Toxic",
+        "Bioaccumulative",
+        "Neurotoxic"
+      ]
     },
     {
       "name": "Triclosan",
       "casNumber": "3380-34-5",
       "ecNumber": "222-182-2",
       "regulatoryStatus": "RESTRICTED",
-      "list": "Annex XVII",
+      "list": "Annex XVII Entry 77",
       "category": "Antimicrobial",
       "restrictions": "Banned in certain cosmetics and consumer products",
-      "hazards": ["Endocrine disruptor", "Environmental hazard"]
-    },
-    {
-      "name": "Parabens (Propylparaben, Butylparaben)",
-      "casNumber": "94-13-3",
-      "ecNumber": "202-307-7",
-      "regulatoryStatus": "RESTRICTED",
-      "list": "Cosmetics Regulation",
-      "category": "Preservative",
-      "restrictions": "Restricted in cosmetics >0.14%",
-      "hazards": ["Endocrine disruptor", "Skin sensitizer"]
+      "hazards": [
+        "Endocrine disruptor",
+        "Environmental hazard"
+      ]
     },
     {
       "name": "Hydroquinone",
       "casNumber": "123-31-9",
       "ecNumber": "204-617-8",
       "regulatoryStatus": "RESTRICTED",
-      "list": "Cosmetics Regulation",
+      "list": "Cosmetics Regulation 1223/2009",
       "category": "Phenol",
       "restrictions": "Banned in cosmetics in EU",
-      "hazards": ["Mutagenic", "Skin sensitizer", "Environmental hazard"]
+      "hazards": [
+        "Mutagenic",
+        "Skin sensitizer",
+        "Environmental hazard"
+      ]
     },
     {
-      "name": "Chromium VI compounds",
-      "casNumber": "18540-29-9",
-      "ecNumber": "242-450-0",
-      "regulatoryStatus": "SVHC",
-      "list": "Candidate List",
-      "category": "Heavy Metal Compound",
-      "restrictions": "Restricted in leather products >3mg/kg",
-      "hazards": ["Carcinogenic", "Mutagenic", "Skin sensitizer"]
-    },
-    {
-      "name": "Coal tar dyes",
+      "name": "Coal tar",
       "casNumber": "8007-45-2",
       "ecNumber": "232-361-7",
       "regulatoryStatus": "RESTRICTED",
-      "list": "Cosmetics Regulation",
+      "list": "Cosmetics Regulation 1223/2009",
       "category": "Colorant",
       "restrictions": "Banned in cosmetics",
-      "hazards": ["Carcinogenic", "Mutagenic"]
+      "hazards": [
+        "Carcinogenic",
+        "Mutagenic"
+      ]
     },
     {
-      "name": "1,4-Dioxane",
-      "casNumber": "123-91-1",
-      "ecNumber": "204-661-8",
-      "regulatoryStatus": "SVHC",
-      "list": "Candidate List",
-      "category": "Ether",
-      "restrictions": "Restricted as impurity in cosmetics",
-      "hazards": ["Carcinogenic", "Toxic to organs"]
-    },
-    {
-      "name": "Toluene",
-      "casNumber": "108-88-3",
-      "ecNumber": "203-625-9",
-      "regulatoryStatus": "SVHC",
-      "list": "Candidate List",
-      "category": "Aromatic Hydrocarbon",
-      "restrictions": "Banned in nail products in EU",
-      "hazards": ["Toxic to reproduction", "Neurotoxic", "Flammable"]
-    },
-    {
-      "name": "Methylisothiazolinone (MIT)",
+      "name": "Methylisothiazolinone",
       "casNumber": "2682-20-4",
       "ecNumber": "220-239-6",
       "regulatoryStatus": "RESTRICTED",
-      "list": "Cosmetics Regulation",
+      "list": "Cosmetics Regulation 1223/2009",
       "category": "Preservative",
       "restrictions": "Banned in leave-on cosmetics",
-      "hazards": ["Severe skin sensitizer", "Allergenic"]
-    },
-    {
-      "name": "Microplastic beads",
-      "casNumber": "various",
-      "ecNumber": "various",
-      "regulatoryStatus": "BANNED",
-      "list": "Annex XVII",
-      "category": "Plastic",
-      "restrictions": "Banned in rinse-off cosmetics",
-      "hazards": ["Environmental pollutant", "Marine toxicity"]
-    },
-    {
-      "name": "Per- and polyfluoroalkyl substances (PFAS)",
-      "casNumber": "various",
-      "ecNumber": "various",
-      "regulatoryStatus": "SVHC",
-      "list": "Candidate List",
-      "category": "Fluorinated Compound",
-      "restrictions": "Under restriction proposal",
-      "hazards": ["Persistent", "Bioaccumulative", "Toxic"]
+      "hazards": [
+        "Severe skin sensitizer",
+        "Allergenic"
+      ]
     }
   ]
 }
