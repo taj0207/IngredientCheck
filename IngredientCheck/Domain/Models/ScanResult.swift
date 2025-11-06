@@ -36,7 +36,10 @@ struct ScanResult: Identifiable, Codable {
         processingTime: TimeInterval = 0
     ) {
         self.id = id
-        self.ingredients = ingredients
+        // Sort ingredients by safety level (worst to safest)
+        self.ingredients = ingredients.sorted { lhs, rhs in
+            ScanResult.safetyLevelPriority(lhs.safetyLevel) > ScanResult.safetyLevelPriority(rhs.safetyLevel)
+        }
         self.productName = productName
         self.productBrand = productBrand
         self.scanDate = scanDate
@@ -128,6 +131,17 @@ struct ScanResult: Identifiable, Codable {
 
         // Otherwise unknown
         return .unknown
+    }
+
+    /// Get priority for sorting (higher = more dangerous)
+    private static func safetyLevelPriority(_ level: Constants.SafetyLevel) -> Int {
+        switch level {
+        case .danger: return 4
+        case .warning: return 3
+        case .caution: return 2
+        case .unknown: return 1
+        case .safe: return 0
+        }
     }
 }
 
