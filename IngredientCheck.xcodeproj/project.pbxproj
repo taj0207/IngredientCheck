@@ -81,9 +81,9 @@
 		29AC08AD89804E0C859D685F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Resources/Info.plist; sourceTree = "<group>"; };
 		6A4E5BAE847742D6B0AF343F /* IngredientCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IngredientCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 
-		78161C51F7B44DA9BB14806E /* RegulatorySubstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegulatorySubstance.swift; sourceTree = "<group>"; };
-		9E921CFE26EB4D9E871513FE /* RegulatoryBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegulatoryBadgeView.swift; sourceTree = "<group>"; };
-		A11B83C27A0F41EA9CED4D76 /* ECHA_Regulatory_Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ECHA_Regulatory_Data.json; sourceTree = "<group>"; };
+		78161C51F7B44DA9BB14806E /* RegulatorySubstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Domain/Models/RegulatorySubstance.swift"; sourceTree = "<group>"; };
+		9E921CFE26EB4D9E871513FE /* RegulatoryBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Presentation/Common/Components/RegulatoryBadgeView.swift"; sourceTree = "<group>"; };
+		A11B83C27A0F41EA9CED4D76 /* ECHA_Regulatory_Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Resources/ECHA_Regulatory_Data.json; sourceTree = "<group>"; };
 	/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +149,9 @@
 				1BF3B62159234F7DBEAD74E9 /* IngredientServiceImpl.swift */,
 				638C23BB558E49E0975640AE /* OCRServiceImpl.swift */,
 				29AC08AD89804E0C859D685F /* Info.plist */,
+			78161C51F7B44DA9BB14806E /* RegulatorySubstance.swift */,
+			9E921CFE26EB4D9E871513FE /* RegulatoryBadgeView.swift */,
+			A11B83C27A0F41EA9CED4D76 /* ECHA_Regulatory_Data.json */,
 			);
 			path = IngredientCheck;
 			sourceTree = "<group>";

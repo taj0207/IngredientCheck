@@ -7,6 +7,9 @@
 
 import Foundation
 
+// Note: RegulatoryStatus is defined in SafetyInfo.swift
+// Logger is defined in Logger.swift
+
 /// ECHA Regulatory Database
 struct ECHARegulatoryDatabase: Codable {
     let version: String
