@@ -1,0 +1,207 @@
+{
+  "version": "2025.1",
+  "lastUpdated": "2025-11-05",
+  "source": "ECHA REACH Candidate List and Annex XVII",
+  "substances": [
+    {
+      "name": "Lead",
+      "casNumber": "7439-92-1",
+      "ecNumber": "231-100-4",
+      "regulatoryStatus": "RESTRICTED",
+      "list": "Annex XVII",
+      "category": "Heavy Metal",
+      "restrictions": "Banned in consumer products above 0.05% by weight",
+      "hazards": ["Toxic to reproduction", "Carcinogenic", "Neurotoxic"]
+    },
+    {
+      "name": "Mercury",
+      "casNumber": "7439-97-6",
+      "ecNumber": "231-106-7",
+      "regulatoryStatus": "BANNED",
+      "list": "Annex XVII",
+      "category": "Heavy Metal",
+      "restrictions": "Banned in most consumer products",
+      "hazards": ["Toxic", "Bioaccumulative", "Neurotoxic"]
+    },
+    {
+      "name": "Cadmium",
+      "casNumber": "7440-43-9",
+      "ecNumber": "231-152-8",
+      "regulatoryStatus": "RESTRICTED",
+      "list": "Annex XVII",
+      "category": "Heavy Metal",
+      "restrictions": "Banned in jewelry, plastics >0.01%",
+      "hazards": ["Carcinogenic", "Toxic to reproduction", "Toxic to organs"]
+    },
+    {
+      "name": "Asbestos",
+      "casNumber": "1332-21-4",
+      "ecNumber": "215-609-9",
+      "regulatoryStatus": "BANNED",
+      "list": "Annex XVII",
+      "category": "Mineral Fiber",
+      "restrictions": "Completely banned in EU",
+      "hazards": ["Carcinogenic", "Respiratory hazard", "Fatal if inhaled"]
+    },
+    {
+      "name": "Benzene",
+      "casNumber": "71-43-2",
+      "ecNumber": "200-753-7",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Aromatic Hydrocarbon",
+      "restrictions": "Restricted in consumer products >0.1%",
+      "hazards": ["Carcinogenic", "Mutagenic", "Highly flammable"]
+    },
+    {
+      "name": "Formaldehyde",
+      "casNumber": "50-00-0",
+      "ecNumber": "200-001-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Aldehyde",
+      "restrictions": "Restricted in cosmetics and textiles",
+      "hazards": ["Carcinogenic", "Skin sensitizer", "Toxic if inhaled"]
+    },
+    {
+      "name": "Bis(2-ethylhexyl) phthalate (DEHP)",
+      "casNumber": "117-81-7",
+      "ecNumber": "204-211-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List, Annex XIV",
+      "category": "Phthalate",
+      "restrictions": "Authorization required, banned in toys and childcare articles",
+      "hazards": ["Toxic to reproduction", "Endocrine disruptor"]
+    },
+    {
+      "name": "Dibutyl phthalate (DBP)",
+      "casNumber": "84-74-2",
+      "ecNumber": "201-557-4",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List, Annex XIV",
+      "category": "Phthalate",
+      "restrictions": "Authorization required, banned in toys",
+      "hazards": ["Toxic to reproduction", "Endocrine disruptor"]
+    },
+    {
+      "name": "Benzyl butyl phthalate (BBP)",
+      "casNumber": "85-68-7",
+      "ecNumber": "201-622-7",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List, Annex XIV",
+      "category": "Phthalate",
+      "restrictions": "Authorization required, banned in toys",
+      "hazards": ["Toxic to reproduction", "Endocrine disruptor"]
+    },
+    {
+      "name": "Bisphenol A (BPA)",
+      "casNumber": "80-05-7",
+      "ecNumber": "201-245-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Phenol",
+      "restrictions": "Banned in baby bottles, restricted in food contact materials",
+      "hazards": ["Endocrine disruptor", "Toxic to reproduction"]
+    },
+    {
+      "name": "Triclosan",
+      "casNumber": "3380-34-5",
+      "ecNumber": "222-182-2",
+      "regulatoryStatus": "RESTRICTED",
+      "list": "Annex XVII",
+      "category": "Antimicrobial",
+      "restrictions": "Banned in certain cosmetics and consumer products",
+      "hazards": ["Endocrine disruptor", "Environmental hazard"]
+    },
+    {
+      "name": "Parabens (Propylparaben, Butylparaben)",
+      "casNumber": "94-13-3",
+      "ecNumber": "202-307-7",
+      "regulatoryStatus": "RESTRICTED",
+      "list": "Cosmetics Regulation",
+      "category": "Preservative",
+      "restrictions": "Restricted in cosmetics >0.14%",
+      "hazards": ["Endocrine disruptor", "Skin sensitizer"]
+    },
+    {
+      "name": "Hydroquinone",
+      "casNumber": "123-31-9",
+      "ecNumber": "204-617-8",
+      "regulatoryStatus": "RESTRICTED",
+      "list": "Cosmetics Regulation",
+      "category": "Phenol",
+      "restrictions": "Banned in cosmetics in EU",
+      "hazards": ["Mutagenic", "Skin sensitizer", "Environmental hazard"]
+    },
+    {
+      "name": "Chromium VI compounds",
+      "casNumber": "18540-29-9",
+      "ecNumber": "242-450-0",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Heavy Metal Compound",
+      "restrictions": "Restricted in leather products >3mg/kg",
+      "hazards": ["Carcinogenic", "Mutagenic", "Skin sensitizer"]
+    },
+    {
+      "name": "Coal tar dyes",
+      "casNumber": "8007-45-2",
+      "ecNumber": "232-361-7",
+      "regulatoryStatus": "RESTRICTED",
+      "list": "Cosmetics Regulation",
+      "category": "Colorant",
+      "restrictions": "Banned in cosmetics",
+      "hazards": ["Carcinogenic", "Mutagenic"]
+    },
+    {
+      "name": "1,4-Dioxane",
+      "casNumber": "123-91-1",
+      "ecNumber": "204-661-8",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Ether",
+      "restrictions": "Restricted as impurity in cosmetics",
+      "hazards": ["Carcinogenic", "Toxic to organs"]
+    },
+    {
+      "name": "Toluene",
+      "casNumber": "108-88-3",
+      "ecNumber": "203-625-9",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Aromatic Hydrocarbon",
+      "restrictions": "Banned in nail products in EU",
+      "hazards": ["Toxic to reproduction", "Neurotoxic", "Flammable"]
+    },
+    {
+      "name": "Methylisothiazolinone (MIT)",
+      "casNumber": "2682-20-4",
+      "ecNumber": "220-239-6",
+      "regulatoryStatus": "RESTRICTED",
+      "list": "Cosmetics Regulation",
+      "category": "Preservative",
+      "restrictions": "Banned in leave-on cosmetics",
+      "hazards": ["Severe skin sensitizer", "Allergenic"]
+    },
+    {
+      "name": "Microplastic beads",
+      "casNumber": "various",
+      "ecNumber": "various",
+      "regulatoryStatus": "BANNED",
+      "list": "Annex XVII",
+      "category": "Plastic",
+      "restrictions": "Banned in rinse-off cosmetics",
+      "hazards": ["Environmental pollutant", "Marine toxicity"]
+    },
+    {
+      "name": "Per- and polyfluoroalkyl substances (PFAS)",
+      "casNumber": "various",
+      "ecNumber": "various",
+      "regulatoryStatus": "SVHC",
+      "list": "Candidate List",
+      "category": "Fluorinated Compound",
+      "restrictions": "Under restriction proposal",
+      "hazards": ["Persistent", "Bioaccumulative", "Toxic"]
+    }
+  ]
+}

@@ -24,7 +24,11 @@
       "Bash(firebase --version:*)",
       "Bash(firebase login:list:*)",
       "Bash(firebase deploy:*)",
-      "WebFetch(domain:echa.europa.eu)"
+      "WebFetch(domain:echa.europa.eu)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nIntegrate PubChem API via Firebase Functions and fix GPT-5 OCR\n\nMajor Changes:\n- **Firebase Functions Backend**: Deploy serverless proxy for ingredient safety lookups\n  - Queries PubChem REST API for chemical safety data\n  - Returns GHS classifications, hazard statements, and pictograms\n  - No caching (simple pass-through proxy)\n  - Deployed to: ingredientcheck-app-1762334045\n\n- **Fix GPT-5 OCR Token Limit**: Increase maxOCRTokens from 1024 to 4096\n  - GPT-5 reasoning model uses 1000-2000 internal reasoning tokens\n  - Previous limit caused empty responses (finish_reason: \"length\")\n  - Now successfully extracts ingredients with finish_reason: \"stop\"\n\n- **iOS App Updates for PubChem**:\n  - Update ECHAAPIClient to parse PubChem GHS data format\n  - Add PubChemGHSData and PubChemPictogram models\n  - Parse hazard statements (H-codes: H225, H350, etc.)\n  - Map PubChem pictograms to GHS enums\n  - Single API call replaces previous 2-call flow\n  - APIConfig.swift points to Firebase Function URL\n\n- **Firebase Infrastructure**:\n  - firebase-functions/index.js: PubChem proxy with GHS parsing\n  - firebase.json: Node.js 20 runtime configuration\n  - .firebaserc: Project configuration\n  - Firestore rules (not used, no caching)\n\n- **Documentation**:\n  - FIREBASE_SETUP_GUIDE.md: Complete deployment guide\n  - TESTING_GUIDE.md: End-to-end testing procedures\n  - Multiple diagnostic and setup guides\n\nTechnical Details:\n- PubChem API: 3-step query (name→CID, CID→properties, CID→GHS data)\n- iOS parsing: Extract H-codes, map pictograms, determine safety levels\n- Backend eliminates need for ECHA API (no public endpoint available)\n- GPT-5 now uses 1344 reasoning + 126 output tokens successfully\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git config:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:pubchem.ncbi.nlm.nih.gov)"
     ],
     "deny": [],
     "ask": []

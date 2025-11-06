@@ -152,13 +152,61 @@ enum RegulatoryStatus: String, Codable {
         case .approved:
             return NSLocalizedString("regulatory.approved", comment: "Approved")
         case .restricted:
-            return NSLocalizedString("regulatory.restricted", comment: "Restricted")
+            return NSLocalizedString("regulatory.restricted", comment: "Restricted in EU")
         case .banned:
-            return NSLocalizedString("regulatory.banned", comment: "Banned")
+            return NSLocalizedString("regulatory.banned", comment: "Banned in EU")
         case .underReview:
-            return NSLocalizedString("regulatory.under_review", comment: "Under Review")
+            return NSLocalizedString("regulatory.under_review", comment: "SVHC (Under Review)")
         case .notRegulated:
             return NSLocalizedString("regulatory.not_regulated", comment: "Not Regulated")
+        }
+    }
+
+    /// Badge icon for UI
+    var badgeIcon: String {
+        switch self {
+        case .approved: return "checkmark.seal.fill"
+        case .restricted: return "exclamationmark.triangle.fill"
+        case .banned: return "xmark.octagon.fill"
+        case .underReview: return "exclamationmark.circle.fill"
+        case .notRegulated: return "info.circle"
+        }
+    }
+
+    /// Badge color for UI (SwiftUI Color name)
+    var badgeColorName: String {
+        switch self {
+        case .approved: return "green"
+        case .restricted: return "orange"
+        case .banned: return "red"
+        case .underReview: return "yellow"
+        case .notRegulated: return "gray"
+        }
+    }
+
+    /// Whether this status should be prominently displayed
+    var shouldHighlight: Bool {
+        switch self {
+        case .banned, .restricted, .underReview:
+            return true
+        case .approved, .notRegulated:
+            return false
+        }
+    }
+
+    /// EU-specific regulatory description
+    var euDescription: String {
+        switch self {
+        case .approved:
+            return "Approved for use in EU consumer products"
+        case .restricted:
+            return "Restricted under EU REACH Annex XVII - Limited use conditions apply"
+        case .banned:
+            return "Banned in EU consumer products under REACH regulations"
+        case .underReview:
+            return "SVHC - Substance of Very High Concern on EU Candidate List"
+        case .notRegulated:
+            return "No specific EU REACH restrictions"
         }
     }
 }

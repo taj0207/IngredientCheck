@@ -35,19 +35,59 @@ class ECHAAPIClient {
     func fetchSafetyInfo(for identifier: String) async throws -> SafetyInfo? {
         Logger.info("Fetching safety data for: \(identifier)", category: .echa)
 
-        // Search for the substance (PubChem returns all data in one call)
+        // STEP 1: Check local ECHA regulatory database first
+        let regulatoryStatus = await ECHARegulatoryManager.shared.getRegulatoryStatus(for: identifier)
+        let regulatorySubstance = await ECHARegulatoryManager.shared.findRegulatory(for: identifier)
+
+        if let regulatory = regulatorySubstance {
+            Logger.info("Found in ECHA regulatory database: \(regulatory.regulatoryStatus)", category: .echa)
+
+            // If substance is BANNED or RESTRICTED, return regulatory info immediately
+            if regulatory.status == .banned || regulatory.status == .restricted {
+                return parseSafetyInfoFromRegulatory(regulatory)
+            }
+        }
+
+        // STEP 2: Query PubChem for additional safety data
         let substances = try await searchSubstance(query: identifier)
 
         guard let substance = substances.first else {
+            // If found in regulatory database but not in PubChem, return regulatory info
+            if let regulatory = regulatorySubstance {
+                Logger.logECHAQuery(ingredient: identifier, found: true)
+                return parseSafetyInfoFromRegulatory(regulatory)
+            }
+
             Logger.logECHAQuery(ingredient: identifier, found: false)
             return nil
         }
 
         Logger.logECHAQuery(ingredient: identifier, found: true)
 
-        // Parse safety info from PubChem GHS data
+        // STEP 3: Parse safety info from PubChem GHS data
         if let ghsData = substance.ghsData {
-            return parseSafetyInfoFromPubChem(substance: substance, ghsData: ghsData)
+            var safetyInfo = parseSafetyInfoFromPubChem(substance: substance, ghsData: ghsData)
+
+            // Override regulatory status with ECHA data if more severe
+            if regulatoryStatus == .banned || regulatoryStatus == .restricted || regulatoryStatus == .underReview {
+                safetyInfo = SafetyInfo(
+                    level: safetyInfo.level,
+                    hazardStatements: safetyInfo.hazardStatements,
+                    precautionaryStatements: safetyInfo.precautionaryStatements,
+                    ghsClassifications: safetyInfo.ghsClassifications,
+                    regulatoryStatus: regulatoryStatus,
+                    lastUpdated: safetyInfo.lastUpdated,
+                    sources: safetyInfo.sources + ["ECHA Regulatory Database"],
+                    detailedDescription: regulatorySubstance?.restrictions ?? safetyInfo.detailedDescription
+                )
+            }
+
+            return safetyInfo
+        }
+
+        // If no GHS data but found in regulatory database
+        if let regulatory = regulatorySubstance {
+            return parseSafetyInfoFromRegulatory(regulatory)
         }
 
         // If no GHS data available, return basic info
@@ -56,7 +96,7 @@ class ECHAAPIClient {
             hazardStatements: [],
             precautionaryStatements: [],
             ghsClassifications: [],
-            regulatoryStatus: .notRegulated,
+            regulatoryStatus: regulatoryStatus,
             lastUpdated: Date(),
             sources: ["PubChem"],
             detailedDescription: "No hazard classification available for \(substance.name)"
@@ -166,6 +206,59 @@ class ECHAAPIClient {
     /// Build details URL
     private func buildDetailsURL(id: String) -> URL? {
         URL(string: "\(baseURL)/substance/\(id)")
+    }
+
+    /// Parse safety information from ECHA regulatory database
+    private func parseSafetyInfoFromRegulatory(_ regulatory: RegulatorySubstance) -> SafetyInfo {
+        // Convert regulatory hazards to hazard statements
+        let hazardStatements = regulatory.hazards.map { hazard in
+            HazardStatement(
+                id: UUID().uuidString,
+                code: "ECHA",
+                statement: hazard,
+                category: .health
+            )
+        }
+
+        // Determine safety level based on regulatory status
+        let level: Constants.SafetyLevel
+        switch regulatory.status {
+        case .banned:
+            level = .danger
+        case .restricted:
+            level = .warning
+        case .underReview:
+            level = .caution
+        default:
+            level = .unknown
+        }
+
+        // Create GHS classification from regulatory status
+        var ghsClassifications: [GHSClassification] = []
+        if regulatory.status == .banned || regulatory.status == .restricted {
+            ghsClassifications.append(GHSClassification(
+                id: "echa_banned",
+                pictogram: .skullCrossbones,
+                signalWord: .danger,
+                description: "\(regulatory.regulatoryStatus) in EU - \(regulatory.list)"
+            ))
+        }
+
+        return SafetyInfo(
+            level: level,
+            hazardStatements: hazardStatements,
+            precautionaryStatements: [regulatory.restrictions],
+            ghsClassifications: ghsClassifications,
+            regulatoryStatus: regulatory.status,
+            lastUpdated: Date(),
+            sources: ["ECHA \(regulatory.list)"],
+            detailedDescription: """
+            \(regulatory.regulatoryStatus) under EU REACH
+            List: \(regulatory.list)
+            Category: \(regulatory.category)
+            Restrictions: \(regulatory.restrictions)
+            """
+        )
     }
 
     /// Parse safety information from PubChem GHS data
